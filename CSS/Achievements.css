@@ -1,0 +1,226 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h2 {
+	text-align: center;
+	text-decoration:underline;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	color: #2A7C6F;
+	font-size: 50px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+
+
+.rounded-square1 {
+    width: 800px; /* Adjust the width as needed */
+    max-width: 600px;
+    height: 150px; /* Adjust the height as needed */
+    border: 2px solid #000; 
+    border-radius: 35px;
+    margin-left: -300px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 20px;
+    color: black; /* Text color */
+    overflow: hidden; /* Prevent content overflow */
+    margin-right: 10px; /* Adjust the margin as needed */
+    padding: 30px;
+    right: 0;
+    text-align: center; /* Center text horizontally */
+    color: #2A7C6F;
+    background-color: white;
+    transform: translateX(5%); /* Adjust the horizontal position */
+}
+
+.picture-square1 {
+  width: 500px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin-left: 10px;
+  border: 2px solid #000; /* Black border with 2px width */
+  border-radius: 35px; /* Adjust the border-radius to control the roundness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  overflow: hidden; /* Prevent content overflow */
+  margin-right: 200px; /* Adjust the margin as needed */
+}
+
+.picture-square1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.picture-square2 {
+  width: 500px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin-left: 10px;
+  border: 2px solid #000; /* Black border with 2px width */
+  border-radius: 35px; /* Adjust the border-radius to control the roundness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  overflow: hidden; /* Prevent content overflow */
+  margin-right: -1000px; /* Adjust the margin as needed */
+}
+
+.picture-square2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rounded-square2 {
+    width: 800px; /* Adjust the width as needed */
+    max-width: 600px;
+    height: 150px; /* Adjust the height as needed */
+    border: 2px solid #000; 
+    border-radius: 35px;
+    margin-left: -300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 20px;
+    color: black; /* Text color */
+    overflow: hidden; /* Prevent content overflow */
+    margin-right: 10px; /* Adjust the margin as needed */
+    padding: 30px;
+    right: 0;
+    text-align: center; /* Center text horizontally */
+    color: #2A7C6F;
+    background-color: white;
+    transform: translateX(-8%); /* Adjust the horizontal position */
+}
+
+.picture-square3 {
+  width: 500px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin-left: 10px;
+  border: 2px solid #000; /* Black border with 2px width */
+  border-radius: 35px; /* Adjust the border-radius to control the roundness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  overflow: hidden; /* Prevent content overflow */
+  margin-right: 200px; /* Adjust the margin as needed */
+}
+
+.picture-square3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.rounded-square3 {
+    width: 800px; /* Adjust the width as needed */
+    max-width: 600px;
+    height: 150px; /* Adjust the height as needed */
+    border: 2px solid #000; 
+    border-radius: 35px;
+    margin-left: -300px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 20px;
+    color: black; /* Text color */
+    overflow: hidden; /* Prevent content overflow */
+    margin-right: 10px; /* Adjust the margin as needed */
+    padding: 30px;
+    right: 0;
+    text-align: center; /* Center text horizontally */
+    color: #2A7C6F;
+    background-color: white;
+    transform: translateX(5%); /* Adjust the horizontal position */
+}
+
+.rounded-square4 {
+    width: 800px; /* Adjust the width as needed */
+    max-width: 600px;
+    height: 150px; /* Adjust the height as needed */
+    border: 2px solid #000; 
+    border-radius: 35px;
+    margin-left: -300px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 20px;
+    color: black; /* Text color */
+    overflow: hidden; /* Prevent content overflow */
+    margin-right: 10px; /* Adjust the margin as needed */
+    padding: 30px;
+    right: 0;
+    text-align: center; /* Center text horizontally */
+    color: #2A7C6F;
+    background-color: white;
+    transform: translateX(-8%); /* Adjust the horizontal position */
+    
+}
+
+button {
+  padding: 1.5vw 3vw;
+  font-size: 2.2vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #2A7C6F; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style on hover */
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+button:active {
+  background-color: #0E4C47; /* Even darker green when clicked */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.enlarge img {
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.enlarge img:hover {
+  transform: scale(1.2); /* Enlarge the image on hover */
+}
+
+

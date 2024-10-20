@@ -1,0 +1,83 @@
+﻿/*Styling for the heading displaying "Our Coaches*/
+.ourcoaches-heading {
+	font-size: 45px;
+	color: #008080; 
+	text-align: center; 
+	font-family: "Century Gothic";
+	text-decoration: underline;
+	}
+
+/*Styling for the description section*/
+.description {
+	font-family: Century Gothic;
+	color: #008080;
+	text-align: centre;
+    margin-top: 20px; 
+    line-height: 2.0;
+    font-size: 25px ;
+    }
+	
+
+
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+.column {
+      flex-basis: calc(33.33% - 16px);
+      margin-bottom: 16px;
+      }
+
+    /* Add some shadows to create a card effect */
+.card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+    /* Some left and right padding inside the container */
+.container {
+      padding: 0 16px;
+      padding-bottom: 10px;
+    
+    }
+
+    .title {
+	color: grey;
+	font-family: "century Gothic";
+	padding top: 10px
+}
+
+    /* Ensure images fit within their containers */
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    
+    .button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 12px 24px;
+/* Adjust padding to change button size */color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 25%; /* Allow the width to adjust based on content */;
+	alignment-adjust: central;
+	text-decoration: none; /* Remove default link styling */;
+	font-size: 20px; /* Adjust font size */;
+	font-family: 'Century Gothic', sans-serif;
+	position: relative;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.center {
+	  padding-top: 10px;
+      text-align: center;
+    }

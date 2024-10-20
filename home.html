@@ -1,0 +1,121 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+<body>
+ <body>
+<!--Beginning of navigation bar-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/APU Logo.png" alt="Logo"/>
+        </div>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="Group10.html">Our Team</a>
+                <a href="SwimmingTeam.html">APU Swimming Committee</a>
+                <a href="Technique.html">Swimming Technique</a>
+                <a href="Achievements.html">Achievement</a>
+                <a href="Events.html">Upcoming Events</a>
+                <a href="Membership_Form.html">Join Our Club</a>
+                <a href="Apply_Team.html">Apply For Team Position</a>
+            </div>
+        </div>
+        <a href="coachprofile.html">Coach Profile</a>
+        <a href="stopwithus.html">Shop With Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="termsnconditions.html">T&amp;C</a>
+        <a class="right" href="LoginPage.html">Login</a>
+        <a class="right" href="SignUp.html">Sign Up</a>
+    </div>
+    <!--Ending of navigation bar-->
+
+
+        
+        <h1 id="header1">WELCOME TO APU SWIMMING CLUB</h1>
+        <!--Slideshow container for images-->
+        <div class="slideshow-container">
+			<!--Individual slides with images-->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="Images/swimmertest.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Images/swimtest2.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="Images/swimtest3.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <!--Dots to indicate the current slide in the slideshow-->
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+        
+        <!--Script for slideshow functionality-->
+        <script src="JS/slideshow.js"></script>
+        
+		<!--Gallery section containing clickable image containers-->
+         <div class="gallery">
+  			<!--Clickable image container for upcoming events-->
+       		<div class="upcomingevents-container" onclick="navigateTo('Events.html')"> 					
+       		<img src="Images/upcomingevents.jpg" alt="Upcoming Events" class="image" width="496px" height="=496px">
+
+  				<div class="overlay">
+    				<div class="text">Upcoming events</div> <!--Text overlay on image-->
+  	  			</div>
+			</div>
+			
+		<!--Script for navigation functionality-->
+        <script src="JS/navigateto.js"></script>
+
+        	<!--Clickable image container for achievements-->
+            <div class="achievements-container" onclick="navigateTo('Achievements.html'); return false;">
+  					<img src="Images/achievements2.jpg" alt="Achievements" class="image" width="496px">
+
+  				<div class="overlay">
+    				<div class="text">Achievements</div> <!--Text overlay on image-->
+  	  			</div>
+			</div>
+			
+			<!--Clickable image container for rules-->
+			<div class="rules-container" onclick="navigateTo('Technique.html')">
+  					<img src="Images/rules.jpg" alt="Rules" class="image" width="496px">
+
+  				<div class="overlay">
+    				<div class="text">Basics</div> <!--Text overlay on image-->
+  	  			</div>
+			</div>
+
+		</div>
+<!--Beginning of footer-->
+  <div class="footer">
+     <p>&copy; 2023 APU Swimming Club. All rights reserved.</p>
+  </div>
+<!--Ending of footer-->
+	
+</body>
+</html>

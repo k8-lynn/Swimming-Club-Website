@@ -1,0 +1,63 @@
+﻿.label2 {
+  font-size: 20px;
+  font-family: "Century Gothic";
+  color: #408080;
+  display: block;
+  margin-bottom: 20px; 
+  margin-right:10px
+}
+
+.textarea {
+	width:700px;
+	padding:10px;
+	margin-bottom:10px;
+	box-sizing:border-box;
+	resize:none;
+	font-size:medium
+}
+input{ 
+width:100%;
+padding:8px;
+margin-bottom:8px;
+box-sizing:border-box
+	
+}
+
+.split{
+	display:flex;
+	margin-bottom:16px
+}
+.split>div{
+	flex:1;
+	margin-right:10px
+	}
+	
+.form {
+  border: solid 3px darkcyan;
+  border-radius: 50px;
+  padding: 30px;
+  background-color: white;
+  max-width:500px;
+  margin:auto
+}
+
+.header {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: darkcyan;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Century Gothic";
+  color: #408080;
+}
+
+.button {
+  display:block;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Century Gothic";
+  color: white;
+  background-color: #408080;
+  margin:0 auto
+}

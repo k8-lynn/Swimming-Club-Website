@@ -1,0 +1,108 @@
+﻿/* Style for the main shop heading */
+.shop-heading {
+	font-size: 45px; /* Adjust the font size */
+	color: #008080; /* Change the text color */
+	text-align: center; /* Align the text to center */
+	font-family: "Century Gothic";
+	text-decoration: underline;
+  }
+  
+  /* Style for the note about merchandise availability */
+  .note {
+	font-size: 20px; /* Adjust the font size */
+	color: #CC0000; /* Change the text color */
+	text-align: center; /* Align the text to center */
+	font-family: "Century Gothic";
+	font-weight: normal;
+  }
+  
+  /* Flexbox container for centering the shop items */
+  .shop-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Center the items horizontally */
+	gap: 30px; /* Space between items */
+  }
+  
+  /* Style for each merchandise item container */
+  .shopgallery {
+	border: 2px solid #C0C0C0;
+	width: 496px;
+	font-family: "Century Gothic";
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+	padding-bottom: 20px;
+	text-align: center;
+  }
+  
+  /* Hover effect for the merchandise container */
+  .shopgallery:hover {
+	border: 2px solid #000000;
+  }
+  
+  /* Style for merchandise images inside the container */
+  .shopgallery img {
+	width: 100%;
+	height: 497px;
+  }
+  
+  /* Style for merchandise descriptions */
+  .desc {
+	padding: 15px;
+	font-weight: bold;
+	font-size: 25px;
+	color: #408080;
+  }
+  
+  /* Style for the details (colors and sizes) */
+  .details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .color-text {
+	color: #408080;
+	font-size: 16px;
+	margin-right: 5px;
+  }
+  
+  .colors {
+	display: flex;
+	gap: 5px;
+  }
+  
+  .colours {
+	border: 1px solid black;
+	border-radius: 100%;
+	width: 15px;
+	height: 15px;
+  }
+  
+  .sizes {
+	color: #408080;
+	margin-top: 5px;
+	font-family: 'Century Gothic';
+	font-size: 16px;
+  }
+  
+  /* Box-sizing property for all elements */
+  * {
+	box-sizing: border-box;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 497px) {
+	.shopgallery {
+	  width: 100%;
+	  margin: 6px 0;
+	}
+  }
+  
+  /* Style for footer */
+  .footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #f1f1f1;
+	color: #333;
+  }
+  

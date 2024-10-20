@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Login Page</title>
+<link href="CSS/login.css" rel="stylesheet"/>
+<link rel="stylesheet" href="CSS/navbar.css"/>
+<link rel="stylesheet" href="CSS/footer.css"/>
+
+<style type="text/css">
+.auto-style1 {
+	margin-left: 9px;
+	cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<!--Beginning of navigation bar-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/APU Logo.png" alt="Logo"/>
+        </div>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="Group10.html">Our Team</a>
+                <a href="SwimmingReam.html">APU Swimming Committee</a>
+                <a href="Technique.html">Swimming Technique</a>
+                <a href="Achievements.html">Achievement</a>
+                <a href="Events.html">Upcoming Events</a>
+                <a href="Membership_Form.html">Join Our Club</a>
+                <a href="Apply_Team.html">Apply For Team Position</a>
+            </div>
+        </div>
+        <a href="coachprofile.html">Coach Profile</a>
+        <a href="stopwithus.html">Shop With Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="termsnconditions.html">T&amp;C</a>
+        <a class="right" href="LoginPage.html">Login</a>
+        <a class="right" href="SignUp.html">Sign Up</a>
+    </div>
+    <!--Ending of navigation bar-->
+
+	<p class="header">
+		Log into your account
+	</p>
+	<div class="form-container">
+    <form class="form" name="LogIn" method="post" onsubmit="return validateForm()&&handleFormSubmission()" action="">
+    	<div>
+    		<label class="social">Login using social networks</label>
+    		<br/><br/>
+    		<img class="image" alt="Facebook" src="Images/facebook.png" onclick="facebook()" />
+    		<img class="image" alt="Google-plus" src="Images/google-plus.png" onclick="google()" />
+    		<img class="image" alt="Linkedin" src="Images/linkedin.png" onclick="linkedin()"/>
+    		<br/>
+    		<label class="social">————————&nbsp;OR&nbsp;————————</label>
+    	</div>
+    <!-- Email -->
+      <div class="input-container">
+        <label class="label" for="email">Email:</label><br />
+        <input type="text" name="email" id="email" style="height: 35px" />
+      </div>		
+	<!-- Password-->
+		<div class="input-container">
+        <label class="label" for="passwordInput">Password:</label><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" id="passwordInput" name="password" size="25" maxlength="15" style="height: 35px" />
+        <img class="auto-style1" id="toggleBtn" src="Images/hide.png" height="20px" width="22px" alt="Toggle" onclick="togglePassword()" /></div>  		
+  		<br/>
+  		
+  		<button class="button" type="submit">Login</button>
+  		<br/><br/>
+  		<div class="create">
+  		<label>Don't have an account?</label>
+  		<label class="link" onclick="location.href='SignUp.html'" >Sign Up</label></div>
+	</form>
+	
+	</div>
+	
+
+	<script type="text/javascript" src="JS/login.js">
+	togglePassword();
+	validateForm();
+	facebook();
+	google();
+	linkedin();
+	</script>
+	<!--Beginning of footer-->
+  <div class="footer">
+     <p>&copy; 2023 APU Swimming Club. All rights reserved.</p>
+  </div>
+<!--Ending of footer-->
+
+
+	
+	</body>
+
+
+</html>

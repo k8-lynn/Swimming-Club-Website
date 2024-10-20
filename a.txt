@@ -1,0 +1,45 @@
+img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+—————————————————
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://www.flaticon.com/free-icons/eye" title="eye icons">Eye icons created by Kiranshastry - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/password" title="password icons">Password icons created by th studio - Flaticon</a>
+
+<br/><br/>
+
+<table style="width:60%; 
+	border: solid 3px darkcyan;
+	border-radius: 50px;
+	padding: 50px; 
+	background-color: white" >
+	<tr>
+		<td colspan="3" style="text-align:center;color:darkcyan;
+		font-size:30px;font-family:Arial, Helvetica, sans-serif;">
+		Log using social network
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="text-align:center;padding-top:15px">
+		<img alt="Facebook" style="padding-right:25px" width="5%" src="facebook.png" />
+		<img alt="Google-plus" style="padding-right:25px" width="5%" src="google-plus.png" />	
+		<img alt="Linkedin" style="padding-right:25px" width="5%" src="linkedin.png" />
+		</td>
+	</tr>
+	<tr>
+	<td style="padding-top:10px;padding-bottom:10px;text-align:center;color:black;
+	font-size:30px;font-family:Arial, Helvetica, sans-serif">
+	—————————— </td>
+	<td style="text-align:center;color:darkcyan;
+		font-size:30px;font-family:Arial, Helvetica, sans-serif">
+		OR</td>
+	<td style="text-align:center;color:black;
+	font-size:30px;font-family:Arial, Helvetica, sans-serif">
+	—————————— </td>
+	</tr>
+	
+</table>

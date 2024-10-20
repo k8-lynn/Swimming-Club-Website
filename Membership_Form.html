@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Club</title>
+    <link rel="stylesheet" href="CSS/Membership_Form.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+
+<body>
+
+    <!--Beginning of navigation bar-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/APU Logo.png" alt="Logo"/>
+        </div>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="Group10.html">Our Team</a>
+                <a href="SwimmingTeam.html">APU Swimming Committee</a>
+                <a href="Technique.html">Swimming Technique</a>
+                <a href="Achievements.html">Achievement</a>
+                <a href="Events.html">Upcoming Events</a>
+                <a href="Membership_Form.html">Join Our Club</a>
+                <a href="Apply_Team.html">Apply For Team Position</a>
+            </div>
+        </div>
+        <a href="coachprofile.html">Coach Profile</a>
+        <a href="stopwithus.html">Shop With Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="termsnconditions.html">T&amp;C</a>
+        <a class="right" href="LoginPage.html">Login</a>
+        <a class="right" href="SignUp.html">Sign Up</a>
+    </div>
+    <!--Ending of navigation bar-->
+
+    <!--content of web page-->
+    <div class="main-content">
+
+        <form id="membershipForm">
+            <h2 style="text-align: center;">Sign Up To Become A Member</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <p class="error" id="firstName-error"></p>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <p class="error" id="lastName-error"></p>
+
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            <p class="error" id="dateOfBirth-error"></p>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <p class="error" id="gender-error"></p>
+
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height" required>
+            <p class="error" id="height-error"></p>
+
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight" required>
+            <p class="error" id="weight-error"></p>
+
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone">
+            <p class="error" id="telephone-error"></p>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            <p class="error" id="address-error"></p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p class="error" id="email-error"></p>
+
+            <label for="tpNumber">TP Number:</label>
+            <input type="text" id="tpNumber" name="tpNumber" required>
+            <p class="error" id="tpNumber-error"></p>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required>
+            <p class="error" id="course-error"></p>
+
+            <label for="studyLevel">Study Level:</label>
+            <select id="studyLevel" name="studyLevel" required>
+                <option value="" disabled selected>Select study level</option>
+                <option value="degree">Degree</option>
+                <option value="master">Master</option>
+                <option value="PhD">PhD</option>
+            </select>
+            <p class="error" id="studyLevel-error"></p>
+
+            <label for="notificationType">Notification Type:</label>
+            <select id="notificationType" name="notificationType" required>
+                <option value="" disabled selected>Select notification type</option>
+                <option value="telephone">Telephone</option>
+                <option value="email">Email</option>
+            </select>
+            <p class="error" id="notificationType-error"></p>
+
+            <label for="swimmerLevel">Swimmer Level:</label>
+            <select id="swimmerLevel" name="swimmerLevel" required>
+                <option value="" disabled selected>Select your swimmer level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <p class="error" id="swimmerlevel-error"></p>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I agree to the terms and conditions</label>
+                <p class="error" id="checkbox-error"></p>
+            </div>
+
+            <p class="error" id="error-message"></p>
+
+            <button type="button" onclick="validateForm()">Submit</button>
+            <button type="button" onclick="clearForm()">Clear Form</button>
+        </form>
+    </div>
+    <!--Ending of web page content-->
+
+    <script src="JS/Membership_Form.js"></script>
+
+    <!--Beginning of footer-->
+    <div class="footer">
+        <p>&copy; 2023 APU Swimming Club. All rights reserved.</p>
+    </div>
+    <!--Ending of footer-->
+
+</body>
+</html>

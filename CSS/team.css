@@ -1,0 +1,36 @@
+﻿table {
+    margin: auto;
+    padding-top: 20px;
+}
+
+td {
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 25px;
+    color: #408080;
+    padding-right: 10px;
+    padding-top: 10px;
+    height: 500px; /* Add a fixed height to ensure uniformity */
+    vertical-align: top; /* Align content to the top of the cell */
+}
+
+.header {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Century Gothic';
+    color: #408080;
+}
+
+img {
+    width: 350px;
+    height: 290px;
+    object-fit: cover; /* Ensures the image fits the container without distortion */
+    transition: transform 0.1s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.2);
+}

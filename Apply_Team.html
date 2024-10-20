@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Apply Team</title>
+    <link rel="stylesheet" href="CSS/Apply_Team.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+
+<body>
+
+<!--Beginning of navigation bar-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/APU Logo.png" alt="Logo"/>
+        </div>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="Group10.html">Our Team</a>
+                <a href="SwimmingReam.html">APU Swimming Committee</a>
+                <a href="Technique.html">Swimming Technique</a>
+                <a href="Achievements.html">Achievement</a>
+                <a href="Events.html">Upcoming Events</a>
+                <a href="Membership_Form.html">Join Our Club</a>
+                <a href="Apply_Team.html">Apply For Team Position</a>
+            </div>
+        </div>
+        <a href="coachprofile.html">Coach Profile</a>
+        <a href="stopwithus.html">Shop With Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="termsnconditions.html">T&amp;C</a>
+        <a class="right" href="LoginPage.html">Login</a>
+        <a class="right" href="SignUp.html">Sign Up</a>
+    </div>
+    <!--Ending of navigation bar-->
+
+  <h2>Apply for Team Position</h2>
+  
+    <form action="home.html" method="post">
+        <div class="split">
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+        </div>
+
+        <div class="split">
+            <div>
+                <label for="student_id">Student ID:</label>
+                <input type="text" id="student_id" name="student_id" required>
+            </div>
+            <div>
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <div class="split">
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            
+            <div class="gender-container">
+                <label>Gender:</label>
+                <input type="checkbox" id="male" name="gender" value="male" onclick="uncheckOthers(this,'gender')">
+                <label for="male">Male</label>
+                <input type="checkbox" id="female" name="gender" value="female" onclick="uncheckOthers(this,'gender')">
+                <label for="female">Female</label>
+            </div>
+        </div>
+        
+
+		<div class="study-level-checkboxes">
+		    <label for="study_level">Study Level:</label>
+		    <input type="checkbox" id="degree" name="study_level" value="degree" onclick="uncheckOthers(this,'study_level')">
+		    <label for="degree">Degree</label>
+		
+		    <input type="checkbox" id="masters" name="study_level" value="masters" onclick="uncheckOthers(this,'study_level')">
+		    <label for="masters">Masters</label>
+		
+		    <input type="checkbox" id="phd" name="study_level" value="phd" onclick="uncheckOthers(this,'study_level')">
+		    <label for="phd">PhD</label>
+		</div>
+		
+		<script>
+		    function uncheckOthers(currentCheckbox, groupName) {
+		        var checkboxes = document.getElementsByName(groupName);
+		
+		        checkboxes.forEach(function (checkbox) {
+		            if (checkbox !== currentCheckbox) {
+		                checkbox.checked = false;
+		            }
+		        });
+		    }
+		</script>
+                        
+		<label for="course">Course:</label>
+		<input type="text" id="course" name="course" required>
+		
+		<label for="position">Want to apply for:</label>
+		
+		<label class="container">President
+		  <input type="checkbox" name="position" value="president" onclick="uncheckOthers(this, 'position')">
+		  <span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Vice President
+		  <input type="checkbox" name="position" value="vice-president" onclick="uncheckOthers(this, 'position')">
+		  <span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Secretary
+		  <input type="checkbox" name="position" value="secretary" onclick="uncheckOthers(this, 'position')">
+		  <span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Treasurer
+		  <input type="checkbox" name="position" value="treasurer" onclick="uncheckOthers(this, 'position')">
+		  <span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Advisor/Faculty Liaison
+		  <input type="checkbox" name="position" value="advisor" onclick="uncheckOthers(this, 'position')">
+		  <span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Volunteer
+		  <input type="checkbox" name="position" value="volunteer" onclick="uncheckOthers(this, 'position')">
+		  <span class="checkmark"></span>
+		</label>
+		
+		<script>
+		  function uncheckOthers(currentCheckbox, groupName) {
+		    if (currentCheckbox.type === 'checkbox') {
+		      var checkboxes = document.querySelectorAll('input[type="checkbox"][name="' + groupName + '"]');
+		
+		      checkboxes.forEach(function (checkbox) {
+		        if (checkbox !== currentCheckbox) {
+		          checkbox.checked = false;
+		        }
+		      });
+		    }
+		  }
+		</script>
+
+
+
+        <label for="message">Send us a message!</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+		<form action="/Events.html" method="post">
+    		<input type="submit" value="Submit" class="button">
+		</form>
+
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+
+        
+    </form>
+                      
+    <div class="footer">
+        <p>&copy; 2023 APU Swimming Club. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

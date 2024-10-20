@@ -1,0 +1,28 @@
+﻿body {
+    font-family: "Century Gothic";
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-section {
+	margin-bottom: 20px;
+}
+
+.question {
+    background-color: #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+}

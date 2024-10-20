@@ -1,0 +1,98 @@
+﻿/*Styling for the gallery layout*/
+.gallery {
+  display: flex; /*Use flexbox for layout*/
+  justify-content: space-between; /*Spread containers evenly within the gallery*/
+  margin: 20px; /*Margin around the gallery*/
+}
+
+/*Styling for each container within the gallery*/
+.upcomingevents-container {
+  display: inline-block;
+  position: relative;
+  width: 500px; /*Width of the container*/
+  height: 496px; /*Height of the container */
+  margin-right: 10px; /*Margin between containers*/
+  margin-bottom: 10px; /*Margin between rows*/
+  overflow: hidden; /*Hide overflowing content*/
+}
+
+/*Show overlay on hover for upcoming events*/
+.upcomingevents-container:hover .overlay {
+  opacity: 0.7;
+  height: 100%;
+  transition: .3s ease;
+}
+
+/*Styling for achievements container*/
+.achievements-container {
+  position: relative;
+  width: 500px; /*Width of the container*/
+  height: 496px; /*Height of the container*/
+  overflow: hidden; /*Hide overflowing content*/
+}
+
+/*Show overlay on hover for achievements*/
+.achievements-container:hover .overlay {
+  opacity: 0.7;
+  height: 100%;
+  transition: .3s ease;
+}
+
+/*Styling for rules container*/
+.rules-container {
+  position: relative;
+  width: 500px; 
+  height: 496px; 
+  margin-left: 10px; 
+  margin-right: -5px; 
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+/* Show overlay on hover for rules */
+.rules-container:hover .overlay {
+  opacity: 0.7;
+  height: 100%;
+  transition: .3s ease;
+}
+
+/* Styling for images within containers */
+.image {
+  width: 100%; /*Cover the entire container width*/
+  height: 100%; /*Cover the entire container height*/
+  object-fit: cover; /*Maintain aspect ratio and cover the container*/
+}
+
+/* Styling for overlay on images */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008080;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+
+/*Styling for text overlay*/
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  opacity: inherit;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

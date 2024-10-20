@@ -1,0 +1,56 @@
+﻿/*Style the page heading*/
+.termsandconditions-heading {
+	font-size: 45px; 
+	color: #008080; 
+	text-align: center; 
+	font-family: "Century Gothic";
+	text-decoration: underline;
+	}
+
+/*Style the accordion*/
+.accordion {
+	border-width: 1px;
+	border-color: 0.5px #000000;
+	background-color: #CCFFFF;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+	border-top-style: ridge;
+	}
+
+/*Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)*/
+.active, .accordion:hover {
+  background-color: #AFE4DE;
+  }
+
+/*Style the accordion panel. Note: hidden by default*/
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  }
+
+.empty-space {
+    height: 100px; /* Adjust the height to create the desired space */
+}
+
+/*Style the accordion's icon (+) that is to show when the user is going to click/hover on accordion*/
+.accordion:after {
+  content: '\02795'; /*Unicode character for "plus" sign (+)*/
+  font-size: 13px;
+  color: #408080;
+  float: right;
+  margin-left: 5px;
+  }
+
+/*Style the accordion's icon (-) that is to show after the user clicks on accordion and wants to close accordion*/
+.active:after {
+  content: "\2796"; /*Unicode character for "minus" sign (-)*/
+  color: #408080;
+  }

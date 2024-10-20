@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Contact Us</title>
+<link href="CSS/contact.css" rel="stylesheet"/>
+<link rel="stylesheet" href="CSS/navbar.css"/>
+<link rel="stylesheet" href="CSS/footer.css"/>
+
+</head>
+
+<body>
+<!--Beginning of navigation bar-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/APU Logo.png" alt="Logo"/>
+        </div>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="Group10.html">Our Team</a>
+                <a href="SwimmingReam.html">APU Swimming Committee</a>
+                <a href="Technique.html">Swimming Technique</a>
+                <a href="Achievements.html">Achievement</a>
+                <a href="Events.html">Upcoming Events</a>
+                <a href="Membership_Form.html">Join Our Club</a>
+                <a href="Apply_Team.html">Apply For Team Position</a>
+            </div>
+        </div>
+        <a href="coachprofile.html">Coach Profile</a>
+        <a href="stopwithus.html">Shop With Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="termsnconditions.html">T&amp;C</a>
+        <a class="right" href="LoginPage.html">Login</a>
+        <a class="right" href="SignUp.html">Sign Up</a>
+    </div>
+    <!--Ending of navigation bar-->
+
+	<p class="header">
+	Contact Us
+	</p>
+    <form class="form" name="Contact" method="post" onsubmit="return validateForm()&&handleFormSubmission()" action="">
+    <!-- Name -->
+      <div class="split">
+        <label class="label2" for="name" style="width: 75px">Name:</label>
+        <input type="text" name="name" id="name"  maxlength="30" />		
+	  </div>
+    <!--StudentID-->
+      <div class="split">
+      	<div>
+    	<label class="label2" for="studentid" style="width: 115px">Student ID:</label>
+        <input type="text" name="studentid" id="studentid"  maxlength="30" />
+	  	</div>
+	<!--Contact-->
+		<div>
+        <label class="label2" for="contact">Contact:</label>
+        <input type="text" name="contact" id="contact"  maxlength="30"  />
+	  	</div>
+	  </div>
+	<!--Email-->
+        <label class="label2" for="email">Email:</label>
+        <input type="text" name="email" id="email"  maxlength="30" />
+        <br/><br/>
+	<!--course-->
+		<label class="label2" for="textarea">Message:</label>
+		<textarea id="textarea" name="textarea" rows="4" cols="39"></textarea>
+  		<br/><br/>
+  		<button class="button" type="submit">Submit</button>
+  		<br/><br/>
+	</form>
+	
+	<script type="text/javascript" src="JS/contact.js">
+	validateForm();
+	</script>
+
+<!--Beginning of footer-->
+  <div class="footer">
+     <p>&copy; 2023 APU Swimming Club. All rights reserved.</p>
+  </div>
+<!--Ending of footer-->
+
+
+</body>
+
+</html>
